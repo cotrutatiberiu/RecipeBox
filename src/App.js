@@ -13,7 +13,7 @@ class App extends Component {
   render() {
     let jsonParse = JSON.parse(localStorage.recipeBook);
     return (
-      <div className="myApp">
+      <div>
         <RecipeList data={jsonParse} />
         <h3>Description:</h3>
         <p>
@@ -21,20 +21,21 @@ class App extends Component {
           them or edit them freely.
         </p>
         <p>
-          The items are stored in a JSON format in the the local storage of your
-          browser(inspect page->application->local storage for chrome users).
+          The items are stored in a json format in the the local storage of your
+          browser(inspect page->application->local storage for chrome users)
         </p>
         <h3>Rules:</h3>
         <ol>
           <li>Add multiple elements with a space between them.</li>
         </ol>
-        <ul>
-          <li>Project remade from{" "}
+        <h5>
+          Project remade from{" "}
           <a href="https://www.freecodecamp.org/challenges/build-a-recipe-box">
             this
           </a>{" "}
-          challenge.</li>
-          </ul>
+          challenge.
+        </h5>
+        <p>React bootstrap was removed</p>
       </div>
     );
   }
